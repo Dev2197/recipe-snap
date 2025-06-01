@@ -21,8 +21,14 @@ Turn your fridge ingredients into delicious recipes using AI image recognition a
 1. **Clone and install dependencies**:
 
 ```bash
+# Install backend dependencies
 npm install
 pip install -r requirements.txt
+
+# Install frontend dependencies
+cd frontend
+npm install
+cd ..
 ```
 
 2. **Install and setup Ollama**:
@@ -36,19 +42,12 @@ ollama serve
 3. **Start the application**:
 
 ```bash
-# Windows Command Prompt
-start.bat
+# Terminal 1 - Backend (port 5000)
+npm start
 
-# Windows PowerShell
-./start.bat
-
-# Mac/Linux - Run in separate terminals:
-npm start                    # Backend (port 5000)
-cd frontend && npm run dev   # Frontend (port 3000)
-
-# Or create a simple start script for Mac/Linux:
-# Terminal 1: npm start
-# Terminal 2: cd frontend && npm run dev
+# Terminal 2 - Frontend (port 3000)
+cd frontend
+npm run dev
 ```
 
 ## Usage
