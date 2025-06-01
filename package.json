@@ -1,0 +1,35 @@
+{
+  "name": "receipe-snap-backend",
+  "version": "1.0.0",
+  "description": "AI Cooking Assistant Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "install-python-deps": "pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0",
+    "path": "^0.12.7",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai",
+    "cooking",
+    "recipe",
+    "image-recognition",
+    "nodejs",
+    "express"
+  ],
+  "author": "AI Engineer",
+  "license": "MIT"
+}
